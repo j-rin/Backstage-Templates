@@ -2,51 +2,70 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: booking-app
-  description: A booking demo app.
-  # Example for optional annotations
   annotations:
-    'gitlab.com/project-id': '65916041' 
-    'gitlab.com/project-slug': booking-app9690602/frontend
-    'backstage.io/kubernetes-id': booking-app
-    'backstage.io/kubernetes-namespace': default
+    backstage.io/kubernetes-id: booking-app
+    backstage.io/kubernetes-namespace: default
+    gitlab.com/project-id: '65916041'
+    gitlab.com/project-slug: booking-app9690602/frontend
+  description: A booking demo app.
+  name: booking-app
 spec:
-  type: service
-  owner: platform-engineering
   lifecycle: experimental
+  owner: platform-engineering
+  type: service
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: platform-engineering
 spec:
-  type: team
   children: []
+  type: team
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: anup.kishore
 spec:
-  memberOf: [guests, platform-engineering]
+  memberOf:
+  - guests
+  - platform-engineering
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: kamal.chauhan
 spec:
-  memberOf: [guests, platform-engineering]
+  memberOf:
+  - guests
+  - platform-engineering
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: jerin.paul
 spec:
-  memberOf: [guests, platform-engineering]
+  memberOf:
+  - guests
+  - platform-engineering
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: j.rinpaul
 spec:
-  memberOf: [guests, platform-engineering]
+  memberOf:
+  - guests
+  - platform-engineering
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-id: dev
+    backstage.io/kubernetes-namespace: dev
+  name: dev-environment
+spec:
+  lifecycle: development
+  owner: guests
+  type: service
