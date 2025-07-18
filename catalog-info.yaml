@@ -6,8 +6,8 @@ metadata:
   description: A booking demo app.
   # Example for optional annotations
   annotations:
-    'gitlab.com/project-id': '65927533' 
-    'gitlab.com/project-slug': booking-app9690602/bookingservice
+    'gitlab.com/project-id': '65916041' 
+    'gitlab.com/project-slug': booking-app9690602/frontend
     'backstage.io/kubernetes-id': booking-app
     'backstage.io/kubernetes-namespace': default
 spec:
