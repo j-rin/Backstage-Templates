@@ -1,0 +1,16 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: booking-app
+  description: A booking demo app.
+  # Example for optional annotations
+  annotations:
+    'gitlab.com/project-id': '64881086' 
+    'gitlab.com/project-slug': booking-app9690602/bookingservice
+    'backstage.io/kubernetes-id': booking-app
+    'backstage.io/kubernetes-namespace': default
+spec:
+  type: service
+  owner: guests
+  lifecycle: experimental
