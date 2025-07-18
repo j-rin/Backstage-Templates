@@ -36,3 +36,10 @@ metadata:
   name: kamal.chauhan
 spec:
   memberOf: [guests, platform-engineering]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: jerin.paul
+spec:
+  memberOf: [guests, platform-engineering]
