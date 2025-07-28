@@ -1,3 +1,4 @@
+---
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -64,6 +65,18 @@ metadata:
     backstage.io/kubernetes-id: dev
     backstage.io/kubernetes-namespace: dev
   name: dev-environment
+spec:
+  lifecycle: development
+  owner: guests
+  type: service
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-id: stg01
+    backstage.io/kubernetes-namespace: stg01
+  name: stg01-environment
 spec:
   lifecycle: development
   owner: guests
