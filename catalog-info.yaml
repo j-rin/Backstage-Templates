@@ -80,15 +80,3 @@ spec:
   lifecycle: development
   owner: guests
   type: service
----
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  annotations:
-    backstage.io/kubernetes-id: test-qa
-    backstage.io/kubernetes-namespace: test-qa
-  name: test-qa-environment
-spec:
-  lifecycle: development
-  owner: guests
-  type: service
