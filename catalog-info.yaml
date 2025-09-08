@@ -93,3 +93,15 @@ spec:
   lifecycle: development
   owner: guests
   type: service
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-id: test-stg
+    backstage.io/kubernetes-namespace: test-stg
+  name: test-stg-environment
+spec:
+  lifecycle: development
+  owner: guests
+  type: service
